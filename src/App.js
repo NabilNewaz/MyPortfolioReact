@@ -9,11 +9,13 @@ import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 import Resume from './components/Resume'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <div>
       <Router>
+      <ScrollToTop />
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />

@@ -1,10 +1,58 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
 class Home extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                    <link rel="icon" href="img/favicon.png" type="image/png" />
+                    <title>Nabil Newaz</title>
+                    <meta name="title" content="Nabil Newaz" />
+                    <meta name="description" content="Junior Web & UI/UX Developer. Also expert on Graphics Design, Photo Editing, Video Editing, Android Development And Other IT Sectors." />
+
+                    {/*<!-- Google / Search Engine Tags -->*/}
+                    <meta itemprop="name" content="Nabil Newaz" />
+                    <meta itemprop="description" content="Junior Web & UI/UX Developer. Also expert on Graphics Design, Photo Editing, Video Editing, Android Development And Other IT Sectors." />
+                    <meta itemprop="image" content="https://raw.githubusercontent.com/NabilNewaz/NabilNewazPortfolio/master/img/gallery/Untitled-2.jpg" />
+
+                    {/*<!-- Open Graph / Facebook -->*/}
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://nabilnewaz.com/" />
+                    <meta property="og:title" content="Nabil Newaz" />
+                    <meta property="og:description" content="Junior Web & UI/UX Developer. Also expert on Graphics Design, Photo Editing, Video Editing, Android Development And Other IT Sectors." />
+                    <meta property="og:image" content="https://raw.githubusercontent.com/NabilNewaz/NabilNewazPortfolio/master/img/metaimg.png" />
+                    <meta property="og:image:width" content="900" />
+                    <meta property="og:image:height" content="471" />
+                    <meta property="fb:app_id" content="3095171203923902"/>
+
+                    {/*<!-- Twitter -->*/}
+                    <meta property="twitter:card" content="summary_large_image" />
+                    <meta property="twitter:url" content="https://nabilnewaz.com/" />
+                    <meta property="twitter:title" content="Nabil Newaz" />
+                    <meta property="twitter:description" content="Junior Web & UI/UX Developer. Also expert on Graphics Design, Photo Editing, Video Editing, Android Development And Other IT Sectors." />
+                    <meta property="twitter:image" content="https://raw.githubusercontent.com/NabilNewaz/NabilNewazPortfolio/master/img/metaimg.png" />
+
+                    <script src="js/jquery-3.3.1.min.js"></script>
+                    <script src="js/popper.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/stellar.js"></script>
+                    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+                    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+                    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+                    <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+                    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+                    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+                    <script src="js/jquery.ajaxchimp.min.js"></script>
+                    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+                    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+                    <script src="js/mail-script.js"></script>
+                    <script src="js/theme.js"></script>
+                </Helmet>
+
                <div>
                     {/*================Home Banner Area =================*/}
                     <section className="home_banner_area">
@@ -124,7 +172,7 @@ class Home extends Component {
                         </div>
                         </div>
                         <div className="more_btn">
-                        <NavLink className="main_btn" to='/about.html'>Know More About Me</NavLink>
+                        <NavLink className="main_btn" to='/about'>Know More About Me</NavLink>
                         </div>
                     </section>
                     {/*================End Welcome Area =================*/}
